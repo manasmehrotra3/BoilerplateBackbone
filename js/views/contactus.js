@@ -3,14 +3,14 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  'text!../../tpl/contactus.html' // requests contactus.html
-], function($, _, Backbone, contactUsTemplate){
+  'text!../../tpl/contactus.html' // requests home.html
+], function($, _, Backbone, mainHomeTemplate){
 
-  var contactUsView = Backbone.View.extend({
+  var mainHomeView = Backbone.View.extend({
     el: $("#container"),
     render: function(){
-      this.el.html(contactUsTemplate);
+      this.el.html(mainHomeTemplate);
     }
   });
-  return new contactUsView;
+  return new mainHomeView;
 });
